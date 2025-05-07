@@ -12,14 +12,11 @@
 // SCREEN: ui_Screen1
 void ui_Screen1_screen_init(void);
 lv_obj_t *ui_Screen1;
-lv_obj_t *ui_Image1;
-lv_obj_t *ui_Image2;
-lv_obj_t *ui_Image3;
-lv_obj_t *ui_Image4;
-lv_obj_t *ui_Image5;
-lv_obj_t *ui_Image6;
-lv_obj_t *ui_Image7;
-lv_obj_t *ui_Image9;
+lv_obj_t *ui_Button1;
+lv_obj_t *ui_Spinbox1;
+lv_obj_t *ui_Label1;
+lv_obj_t *ui_Button2;
+lv_obj_t *ui_Label2;
 // CUSTOM VARIABLES
 
 // EVENTS

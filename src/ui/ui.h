@@ -28,14 +28,11 @@ extern "C" {
 // SCREEN: ui_Screen1
 void ui_Screen1_screen_init(void);
 extern lv_obj_t *ui_Screen1;
-extern lv_obj_t *ui_Image1;
-extern lv_obj_t *ui_Image2;
-extern lv_obj_t *ui_Image3;
-extern lv_obj_t *ui_Image4;
-extern lv_obj_t *ui_Image5;
-extern lv_obj_t *ui_Image6;
-extern lv_obj_t *ui_Image7;
-extern lv_obj_t *ui_Image9;
+extern lv_obj_t *ui_Button1;
+extern lv_obj_t *ui_Spinbox1;
+extern lv_obj_t *ui_Label1;
+extern lv_obj_t *ui_Button2;
+extern lv_obj_t *ui_Label2;
 // CUSTOM VARIABLES
 
 // EVENTS
@@ -43,13 +40,6 @@ extern lv_obj_t *ui____initial_actions0;
 
 // IMAGES AND IMAGE SETS
 LV_IMG_DECLARE( ui_img_1_png);   // assets/1.png
-LV_IMG_DECLARE( ui_img_25948186);   // assets/attention-removebg-preview.png
-LV_IMG_DECLARE( ui_img_2088487156);   // assets/tik-removebg-preview.png
-LV_IMG_DECLARE( ui_img_next_png);   // assets/next.png
-LV_IMG_DECLARE( ui_img_kyt_png);   // assets/kyt.png
-LV_IMG_DECLARE( ui_img_back_png);   // assets/back.png
-LV_IMG_DECLARE( ui_img_cancel_png);   // assets/cancel.png
-LV_IMG_DECLARE( ui_img_play_stop_png);   // assets/play_stop.png
 LV_IMG_DECLARE( ui_img_3_png);   // assets/3.png
 LV_IMG_DECLARE( ui_img_5_png);   // assets/5.png
 
