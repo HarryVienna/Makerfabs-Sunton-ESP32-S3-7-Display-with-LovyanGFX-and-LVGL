@@ -5,7 +5,7 @@
 #include "gui.h"
 
 #include "../ui/ui.h"
-#include "../gfx/LGFX_ESP32S3_RGB_MakerfabsParallelTFTwithTouch70.h"
+#include "../gfx/LGFX_ESP32S3_RGB_MakerfabsParallelTFTwithTouch43.h"
 
 
 static const char* TAG = "gui";

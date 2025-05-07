@@ -1,5 +1,4 @@
 #define LGFX_USE_V1
-#define SCREEN_4_3  // or SCREEN_7 
 
 #include <LovyanGFX.hpp>
 #include <lgfx/v1/platforms/esp32s3/Panel_RGB.hpp>
@@ -37,7 +36,7 @@ public:
       auto cfg = _bus_instance.config();
       cfg.panel = &_panel_instance;
 
-#ifdef SCREEN_4_3
+
       cfg.pin_d0  = GPIO_NUM_8;
       cfg.pin_d1  = GPIO_NUM_3;
       cfg.pin_d2  = GPIO_NUM_46;
@@ -66,35 +65,6 @@ public:
       cfg.hsync_back_porch = 8;
       cfg.vsync_back_porch = 8;
 
-#else // SCREEN_7
-      cfg.pin_d0  = GPIO_NUM_15;
-      cfg.pin_d1  = GPIO_NUM_7;
-      cfg.pin_d2  = GPIO_NUM_6;
-      cfg.pin_d3  = GPIO_NUM_5;
-      cfg.pin_d4  = GPIO_NUM_4;
-      cfg.pin_d5  = GPIO_NUM_9;
-      cfg.pin_d6  = GPIO_NUM_46;
-      cfg.pin_d7  = GPIO_NUM_3;
-      cfg.pin_d8  = GPIO_NUM_8;
-      cfg.pin_d9  = GPIO_NUM_16;
-      cfg.pin_d10 = GPIO_NUM_1;
-      cfg.pin_d11 = GPIO_NUM_14;
-      cfg.pin_d12 = GPIO_NUM_21;
-      cfg.pin_d13 = GPIO_NUM_47;
-      cfg.pin_d14 = GPIO_NUM_48;
-      cfg.pin_d15 = GPIO_NUM_45;
-
-      cfg.pin_henable = GPIO_NUM_41;
-      cfg.pin_vsync   = GPIO_NUM_40;
-      cfg.pin_hsync   = GPIO_NUM_39;
-      cfg.pin_pclk    = GPIO_NUM_42;
-      cfg.freq_write  = 12000000;
-
-      cfg.hsync_pulse_width = 2;
-      cfg.vsync_pulse_width = 2;
-      cfg.hsync_back_porch = 43;
-      cfg.vsync_back_porch = 12;
-#endif
 
       cfg.hsync_polarity = 0;
       cfg.vsync_polarity = 0;
@@ -126,13 +96,10 @@ public:
       cfg.pin_int    = GPIO_NUM_NC;
       cfg.pin_rst    = GPIO_NUM_38;
 
-#ifdef SCREEN_4_3
+
       cfg.x_max = 480;
       cfg.y_max = 272;
-#else
-      cfg.x_max = 800;
-      cfg.y_max = 480;
-#endif
+
 
       cfg.freq = 100000;
       _touch_instance.config(cfg);
