@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../../UI/Makerfabs-Sunton-ESP32-S3-7-Display-with-LovyanGFX-and-LVGL-develop"
+		},
+		{
+			"name": "Makerfabs-Sunton-ESP32-S3-7-Display-with-LovyanGFX-and-LVGL",
+			"path": "../.."
+		}
+	],
+	"settings": {}
+}
